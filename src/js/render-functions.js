@@ -37,7 +37,7 @@ export const clearGallery = (gallery) => {
 
 export const render = (gallery, images) => {
     const html = images.reduce(compileHtml, "");
-    gallery.innerHTML = html;
+    gallery.insertAdjacentHTML("beforeend", html);
 };
 
 export const showLoader = (loader) => {

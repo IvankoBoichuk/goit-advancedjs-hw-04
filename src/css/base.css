@@ -173,8 +173,18 @@ button:disabled {
 }
 
 .loader {
+  width: max-content;
   display: none;
+  margin: 20px auto 0;
 }
 .loader.active {
+  display: block;
+}
+
+#load-more {
+  display: none;
+  margin: 20px auto 0;
+}
+#load-more.active {
   display: block;
 }
